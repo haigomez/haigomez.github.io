@@ -1,11 +1,12 @@
+Here is your complete, updated index.html file that meets all three requirements, incorporating your headshot.jpg image in the About Me / Personal Statement section.
+
+HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  HTML
-<img src="headshot.jpg" alt="Headshot of [Hailey Gomez]" width="200" />
-  <title>Welcome to My GitHub Page</title>
+  <title>My Portfolio</title>
   <style>
     :root {
       --scarlet: #cc0033; /* Rutgers Scarlet */
@@ -59,14 +60,71 @@
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
 
+    .profile-container {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid var(--scarlet);
+    }
+
+    .personal-statement {
+      flex: 1;
+      font-size: 1.15rem;
+      line-height: 1.6;
+      font-weight: 500;
+    }
+
     h2 {
       color: var(--scarlet);
       margin-top: 0;
     }
 
-    ul {
-      padding-left: 1.2rem;
-      line-height: 1.6;
+    /* Skills Badges */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .skill-badge {
+      background-color: #fee2e2;
+      color: var(--scarlet);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    /* Project Cards */
+    .project-item {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .project-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .project-item h3 {
+      margin: 0 0 0.5rem 0;
+      color: var(--dark-gray);
+    }
+
+    .project-links {
+      margin-top: 0.5rem;
     }
 
     a {
@@ -91,25 +149,63 @@
 <body>
 
   <header>
-    <h1>Hello, World! 👋</h1>
-    <p>Welcome to my first project hosted on GitHub.</p>
+    <h1>Welcome to My Portfolio 👋</h1>
+    <p>Hosted with GitHub Pages</p>
   </header>
 
   <main>
+    <!-- Section 1: Personal Statement -->
     <section class="card">
       <h2>About Me</h2>
-      <p>
-        Hi there! I am building my web development skills and sharing my projects online. 
-        This page is hosted directly from a GitHub repository using GitHub Pages.
-      </p>
+      <div class="profile-container">
+        <img src="headshot.jpg" alt="Headshot of My Name" class="profile-pic" />
+        <p class="personal-statement">
+          Driven and detail-oriented Information Technology student passionate about leveraging modern web development tools and data solutions to build intuitive digital experiences.
+        </p>
+      </div>
     </section>
 
+    <!-- Section 2: Skills -->
     <section class="card">
-      <h2>Featured Links</h2>
-      <ul>
-        <li><a href="https://github.com" target="_blank" rel="noopener">My GitHub Profile</a></li>
-        <li><a href="https://www.rutgers.edu" target="_blank" rel="noopener">Rutgers University</a></li>
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li class="skill-badge">HTML5 & CSS3</li>
+        <li class="skill-badge">JavaScript</li>
+        <li class="skill-badge">Git & GitHub</li>
+        <li class="skill-badge">Responsive Web Design</li>
+        <li class="skill-badge">Python</li>
+        <li class="skill-badge">Problem Solving</li>
       </ul>
+    </section>
+
+    <!-- Section 3: Projects -->
+    <section class="card">
+      <h2>Projects</h2>
+      
+      <div class="project-item">
+        <h3>Personal Portfolio Website</h3>
+        <p>A modern, responsive personal website hosted on GitHub Pages designed to showcase my academic projects, skills, and personal statement.</p>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/your-repo-name" target="_blank" rel="noopener">View Source Code →</a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <h3>Interactive Task Tracker App</h3>
+        <p>A web application that allows users to create, organize, and prioritize daily tasks with real-time browser storage persistence.</p>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/task-tracker" target="_blank" rel="noopener">View Source Code</a> | 
+          <a href="#" target="_blank" rel="noopener">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <h3>Data Analysis & Visualization Script</h3>
+        <p>A Python script that cleans raw dataset metrics and visualizes regional trends using Pandas and Matplotlib.</p>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/data-analysis-script" target="_blank" rel="noopener">View Source Code →</a>
+        </div>
+      </div>
     </section>
   </main>
 
