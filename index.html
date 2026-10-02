@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to My GitHub Page</title>
+  <style>
+    :root {
+      --scarlet: #cc0033; /* Rutgers Scarlet */
+      --dark-gray: #1f2937;
+      --light-bg: #f9fafb;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-bg);
+      color: var(--dark-gray);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: var(--scarlet);
+      color: white;
+      padding: 2.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      flex: 1;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: var(--scarlet);
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--scarlet);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+      border-top: 1px solid #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hello, World! 👋</h1>
+    <p>Welcome to my first project hosted on GitHub.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>About Me</h2>
+      <p>
+        Hi there! I am building my web development skills and sharing my projects online. 
+        This page is hosted directly from a GitHub repository using GitHub Pages.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Featured Links</h2>
+      <ul>
+        <li><a href="https://github.com" target="_blank" rel="noopener">My GitHub Profile</a></li>
+        <li><a href="https://www.rutgers.edu" target="_blank" rel="noopener">Rutgers University</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Built with HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
