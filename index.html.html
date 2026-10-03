@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Hailey Gomez | Business Portfolio</title>
+
+<style> :root { --scarlet: #cc0033; --dark-gray: #1f2937; --medium-gray: #6b7280; --light-bg: #f9fafb; --card-bg: #ffffff; --border: #e5e7eb; } * { box-sizing: border-box; } body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; background-color: var(--light-bg); color: var(--dark-gray); line-height: 1.6; } /* Header */ header { background-color: var(--scarlet); color: white; padding: 3rem 1rem; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); } header h1 { margin: 0; font-size: 2.5rem; } header p { margin: 0.5rem 0 0; font-size: 1.1rem; opacity: 0.9; } /* Main Content */ main { max-width: 850px; margin: 2rem auto; padding: 0 1rem; } .card { background-color: var(--card-bg); border-radius: 10px; padding: 2rem; margin-bottom: 1.5rem; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); } h2 { color: var(--scarlet); margin-top: 0; margin-bottom: 1.25rem; } /* About Me */ .profile-container { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; } .profile-pic { width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 4px solid var(--scarlet); } .personal-statement { flex: 1; min-width: 250px; font-size: 1.15rem; font-weight: 500; } /* Skills */ .skills-list { display: flex; flex-wrap: wrap; gap: 0.6rem; padding: 0; margin: 0; list-style: none; } .skill-badge { background-color: #fee2e2; color: var(--scarlet); padding: 0.45rem 0.9rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem; } /* Projects */ .project-item { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); } .project-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; } .project-item h3 { margin: 0 0 0.5rem; font-size: 1.25rem; } .project-item p { margin-top: 0.5rem; } .project-links { margin-top: 1rem; } a { color: var(--scarlet); text-decoration: none; font-weight: 600; } a:hover { text-decoration: underline; } /* Certificate */ .certificate-img { display: block; width: 100%; max-width: 550px; height: auto; margin: 1rem auto; border: 1px solid var(--border); border-radius: 8px; } /* Footer */ footer { text-align: center; padding: 1.5rem; font-size: 0.9rem; color: var(--medium-gray); border-top: 1px solid var(--border); margin-top: 2rem; } /* Mobile */ @media (max-width: 600px) { header h1 { font-size: 2rem; } .card { padding: 1.5rem; } .profile-container { justify-content: center; text-align: center; } .personal-statement { min-width: 100%; } } </style>
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header> <h1>Hailey Gomez</h1> <p>Rutgers University | Accounting Student</p> </header>
+
+<main>
+
+<!-- Section 1: Personal Statement -->
+<section class="card">
+  <h2>About Me</h2>
+
+  <div class="profile-container">
+
+    <img
+      src="headshot.jpg"
+      alt="Headshot of Hailey Gomez"
+      class="profile-pic"
+    />
+
+    <p class="personal-statement">
+      I’m a Rutgers University accounting student interested in combining
+      business, accounting, and technology to solve real-world problems.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- Section 2: Skills -->
+<section class="card">
+  <h2>Skills</h2>
+
+  <ul class="skills-list">
+<li class="skill-badge">Accounting</li>
+<li class="skill-badge">Communication</li>
+<li class="skill-badge">Customer Service</li>
+<li class="skill-badge">Data Analysis</li>
+<li class="skill-badge">Git & GitHub</li>
+<li class="skill-badge">HTML & CSS</li>
+<li class="skill-badge">Microsoft 365</li>
+<li class="skill-badge">Microsoft Excel</li>
+<li class="skill-badge">Microsoft PowerPoint</li>
+<li class="skill-badge">Problem Solving</li>
+<li class="skill-badge">Teamwork</li>
+  </ul>
+
+</section>
+
+
+<!-- Section 3: Projects -->
+<section class="card">
+  <h2>Projects</h2>
+
+
+  <!-- KPMG Project -->
+  <div class="project-item">
+
+    <h3>KPMG Career Catalyst – Audit Simulation</h3>
+
+    <p>
+      Completed a virtual audit experience through Forage, working through
+      tasks related to audit procedures, financial analysis, and
+      professional judgment.
+    </p>
+
+    <img
+      src="KPMG Career Catalyst – Audit Simulation Certificate.pdf"
+      alt="KPMG Career Catalyst Certificate"
+      class="certificate-img"
+    />
+  </div>
+
+
+  <!-- Second Project -->
+  <div class="project-item">
+
+    <h3>Business Data Analysis</h3>
+
+    <p>
+      Work with a team where I applied Excel and business concepts to organize, analyze, and
+      interpret data to support business decision-making.
+    </p>
+
+    <div class="project-links">
+
+      <a
+        href="data-analytics-project.xlsx"
+        target="_blank"
+        rel="noopener"
+      >
+        View Project →
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- Third Project -->
+  <div class="project-item">
+
+    <h3>Business Consulting Team Project</h3>
+
+    <p>
+      Worked with a team to analyze a business's challenges, identify areas
+    for improvement, and develop recommendations based on our findings.
+    Presented our analysis and recommendations to the business.
+    </p>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- Footer -->
+
+<footer> <p>&copy; 2026 Hailey Gomez | Rutgers University</p> </footer>
